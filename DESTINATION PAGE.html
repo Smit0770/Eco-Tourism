@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESTINATIONS</title>
+    
+    <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body{
+    background:#2c5584;
+    color: #fff;
+}
+
+
+        .navbar{
+    background-color: #0d2c53bd;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+    #d {
+        box-shadow: 0px 2px #ffffff;
+    }
+
+.navbar nav a{
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ff9397;
+    text-decoration: none;
+}
+
+.login-btn{
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+a:hover {
+    box-shadow: 0px 2px #ffffff; transition: 1s;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    background-color: #2c5584;
+  width: 100%; height: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: #0d2c53bd;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #0d2c53bd;
+}
+
+/* Caption text */
+.text {
+  background-color: #0d2c53bd;
+  width: 100%;
+  color: #ff9397;
+  font-family:ALGERIAN;
+  font-size: 35px;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 10px;
+}
+.box {
+  height: fit-content; width: fit-content; background-color: #0d2c53bd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 0px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+        .heading {
+            color: #ff9397;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+          <a class="heading" href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/index.html"><h2>Kutch Ecotourism</h2></a>
+        </div>
+
+        <nav>
+            <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/map.html">Map</a>
+            <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/DESTINATION%20PAGE.html" id="d">Destinations</a>
+            <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/souvenier%20fashion.html">Souveniers</a>
+            <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/Cuisines.html">Cuisines</a>
+        </nav>
+
+        <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/form.html"><button class="login-btn">Register now</button></a>
+    </header>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/Rannofkutch.html"><img src="D:\WEB DEVLOPMENT\img1.jpg" style="width:100%; height: 700px;">
+    <div class="text">RANN OF KUTCH</div></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/mandvibeach.html"><img src="D:\WEB DEVLOPMENT\img6.jpg" style="width:100%; height: 700px;">
+    <div class="text">MANDVI BEACH</div></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/hodkavillage.html"><img src="D:\WEB DEVLOPMENT\img3.jpg" style="width:100%; height: 700px;">
+    <div class="text">HODKA VILLAGE</div></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/pslsce.html"><img src="D:\WEB DEVLOPMENT\img5.jpg" style="width:100%; height: 700px;">
+    <div class="text">VIJAY VILAS PALACE</div></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/roadtoheaven.html"><img src="D:\WEB DEVLOPMENT\img7.jpg" style="width:100%; height: 700px;">
+    <div class="text">ROAD TO HEAVEN</div></a>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+    </section>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+} 
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+<footer style="background-color:#2c5584 ; height: 150px; color: #ff9397; font-size: 18px;   display: flex;
+    justify-content: space-between;">
+    <div class="address" style="float: left; text-align: center;  padding: 40px 40px;"><pre>
+<u>Registered Office:</u>
+
+Udyog Bhavan, Block No. 16,
+4th Floor, Sector-11,
+Gandhinagar - 382 010.
+
+</pre>
+</div>
+
+
+
+<div class="phone" style="float:right; text-align: center;  padding: 40px 40px; ">
+    <pre>
+
+Tel:079-23977219, 079-23977229.
+Toll Free Number:1800 203 1111
+E -mail: info@gujarattourism.com
+</pre>
+</div>
+</footer>
+</html>

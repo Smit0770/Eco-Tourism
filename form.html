@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="C:\Users\lab103\Music\submit.html" method="post">
+    <style>
+        h1{
+            color:rgb(37, 0, 21);
+            font-size: 400%;
+            text-decoration: dashed;
+           
+        }
+        body{
+           background-image: linear-gradient(to right,rgb(219, 192, 255),rgb(192, 104, 192),rgb(179, 120, 247),rgb(177, 133, 194),rgb(211, 111, 211),rgb(178, 96, 199),rgb(207, 133, 226));
+        
+            font-size: 100%;
+        }
+        label{
+            color: rgb(0, 0, 0);
+            font-size: 200%;
+            height: 10px;
+        }
+        h2{
+            color: rgb(0, 0, 0);
+        }
+        input{
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            height: 50px;
+            width: 600px;
+        }
+        fieldset{
+            border: 1px solid white; 
+            padding: 20px;
+            
+
+
+        }
+        form 
+        {
+            background-image: linear-gradient(to right,rgb(219, 192, 255),rgb(192, 104, 192),rgb(179, 120, 247),rgb(177, 133, 194),rgb(211, 111, 211),rgb(178, 96, 199),rgb(207, 133, 226));
+        }
+       
+        
+
+    </style>
+     
+</head>
+<body>
+        <form action="C:\Users\lab103\Music\form2.html" onsubmit="return validateForm()" method="post">
+    <h1>Personal Information</h1>
+   <fieldset><legend>PERSONAL INFO</legend></fieldset>
+    <label for="full">Full Name</label><br>
+    <input type="text" id="full" name="full"><br>
+    <br><label for="ull">Date of Birth</label><br>
+    <input type="date" id="ull" name="ull"><br>
+   
+   
+   <br> <label for="full">female</label><br>
+    <input type="radio" id="full" name="full" class="gender"><br>
+    <label for="full">male</label><br>
+    <input type="radio" id="full" name="full" class="gender"><br>
+   
+    <br><label for="cars">Choose contry</label><br>
+  <select id="cars" name="cars">
+    <option value="volvo">india</option>
+    <option value="saab">usa</option>
+    <option value="fiat" selected>japan</option>
+    <option value="audi">england</option>
+    <option value="volvo">china</option>
+    <option value="saab">south koera</option>
+    <option value="fiat" selected>sri lanka</option>
+    <option value="audi">germany</option>
+    <option value="volvo">france</option>
+    <option value="saab">spain</option>
+    <option value="fiat" selected>brazil</option>
+    <option value="audi">indonesia</option>
+  </select><br>
+ 
+   
+   <br> <label for="full">passport number</label><br>
+    <input type="number" id="full" name="full" required maxlength="8"><br>
+   <br> <label for="mobile">contact no</label><br>
+    <input type="text" id="mobile" name="mobile"  required maxlength="10"><br>
+   <br> <label for="email">email </label><br>
+    <input type="text" id="email" name="email"><br>
+   <br> <label for="full">home address</label><br>
+    <input type="text" id="full" name="full"><br>
+</fieldset>
+
+    <h1>Group Information (if traveling with others)</h1><br>
+   
+   <fieldset><legend>GROUP INFO</legend></fieldset>
+ 
+   <br> <label for="full">Number of People</label><br>
+    <input type="number" id="full" name="full"><br>
+   <br> <label for="full">Adults / Children Count</label><br>
+    <input type="number" id="full" name="full"><br>
+    <h2>group leader details</h2><br>
+   <br> <label for="full">Group Leader name</label><br>
+    <input type="text" id="full" name="full"><br><br>
+    <label for="full">Number of group leader</label><br>
+    <input type="number" id="full" name="full"><br>
+    </fieldset>
+     <br><input type="submit">
+     </form>
+
+<script>
+    function validateForm(){
+        let full = document.getElementById("full").value;
+        if (full  == ""){
+            alert("please enter your full name.");
+            return false;
+
+        }
+        
+
+        var email=document.getElementById("email")
+        var emailPattern =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if(!email.match(emailPattern)){
+            alert("please enter your email.");
+            return false
+        }
+         var mobile=document.getElementById("mobile")
+        var mobilePattern = /^[0-9]{10}$/;
+        if(!mobile.match(mobilePattern)){
+            alert("please enter your number.");
+            return false
+        }
+    }
+   
+
+    
+</script>
+
+
+
+</body>
+</html>
