@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Kutch Ecotourism</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body{
+    background: #fafafa;
+    color: #fff;
+}
+
+.navbar{
+    background-color: #0d2c53bd;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+a:hover {
+    box-shadow: 0px 2px #ffffff; transition: 1s;}
+
+.navbar nav a{
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ff9397;
+    text-decoration: none;
+}
+
+.login-btn{
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+      .slideshow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      
+    }
+
+    .slideshow img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        animation: slideShow 36s infinite;
+    }
+    .slideshow img:nth-child(1){ animation-delay: 0s; }
+    .slideshow img:nth-child(2){ animation-delay: 4s; }
+    .slideshow img:nth-child(3){ animation-delay: 8s; }
+    .slideshow img:nth-child(4){ animation-delay: 12s; }
+    .slideshow img:nth-child(5){ animation-delay: 16s; }
+    .slideshow img:nth-child(6){ animation-delay: 20s; }
+
+    @keyframes slideShow {
+        0%{ opacity: 0; }
+        5%{ opacity: 1; }
+        25%{ opacity: 1; }
+        30%{ opacity: 0; }
+        100%{ opacity: 0; }
+    }
+
+.hero-text{
+        max-width: 450px;
+        padding: 0 50px 200px 50px;
+        position: relative;
+        top: 150px;
+    }
+
+    .hero-text h1{
+        color: white;
+        font-size: 30px;
+        font-family: 'Lucida Calligraphy';
+        margin: 10px 0;
+    }
+
+    .hero-text .subline{
+        color: white;
+        font-size: 20px;
+    }
+.us{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(2, 2, 53);
+            color: white;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .heading h3 {
+            color: #f7a450;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .heading h1 {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 28%;
+            min-width: 260px;
+            padding: 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            background: rgb(255, 255, 255);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 0 6px 18px rgb(0, 0, 0);
+            position: relative;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            line-height: 1.5;
+            font-size: 15px;
+        }
+        .card img{
+             width: 100%; 
+             height: 100%;  /* makes image fit the div */
+            border-radius: 10px;
+        }
+        .bamboo {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 55%;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        @media(max-width: 900px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+
+        .heading {
+            color: #ff9397;
+        }
+</style>
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a class="heading" href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/index.html"><h2>Kutch Ecotourism</h2></a>
+        </div>
+
+        <nav>
+            <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/map.html">Map</a>
+            <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/DESTINATION%20PAGE.html">Destinations</a>
+            <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/souvenier%20fashion.html">Souveniers</a>
+            <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/Cuisines.html">Cuisines</a>
+            
+        </nav>
+
+        <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/form.html"><button class="login-btn">Register now</button></a>
+    </header>
+
+
+    <section class="hero">
+        <div class="slideshow">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/rann-of-kutch-kutch-gujarat-3-attr-hero?qlt=82&ts=1726733961119">
+            <img src="https://www.kiomoi.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fkmadmin%2Fimage%2Fupload%2Fc_scale%2Cw_832%2Ff_auto%2Fv1756713125%2Fkiomoi%2FRann_Utsav_1796.webp&w=1920&q=75">
+            <img src="https://rannutsav.net/wp-content/uploads/2023/11/Performance-1.jpg">
+            <img src="https://www.shutterstock.com/image-photo/kutch-gujarat-india-december-27-600w-608248145.jpg">
+            <img src="https://www.shutterstock.com/image-photo/majestic-adiyogi-statue-isha-yoga-600nw-2619027665.jpg">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/80/35/db/mandvi-beach.jpg?w=900&h=500&s=1">
+        </div>
+
+        <div class="hero-text">
+            <p class="tagline"></p>
+            <h1>Kutch nahi Dekha
+                <br> To kuch nahi dekha
+            </h1>
+            <p class="subline">Exciting Adventures Awaits !<br>Kutch Ecotourism</p>
+        </div>
+
+        
+    </section>
+<section class="us" style="background-color:#ffffff;color:#000000;">
+
+    <div class="heading" >
+        <h3 style="color: #082447;font-family: Lucida calligraphy;">Why Choose Us??</h3>
+        <h1 style="font-family: Lucida calligraphy;">Our Objectives:</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2 style="color:#000000;font-family: Lucida calligraphy;">VISION</h2>
+            <p>
+                To be Kutch’s leading eco-tourism model that protects natural landscapes, 
+                empowers local communities, preserves cultural heritage, and offers visitors meaningful, 
+                low-impact travel experiences that inspire environmental responsibility.
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMcvkCjoXQV9f4pL8AI1DrCNs3b-Q2jOOofCtkob-ANKMtUly3yzqH2X4qtDP8OR8RwnE&usqp=CAU" class="bamboo">
+        </div>
+
+      
+        <div class="card" >
+            <h2 style="color:#000000;font-family: Lucida calligraphy;">MISSION</h2>
+            <p>
+               Ensure minimal environmental footprint by using renewable energy, water-saving practices, 
+               waste-free operations, and eco-friendly infrastructure.
+               Support long-term sustainability by reinvesting in conservation, local artisans, and ecosystem restoration.
+            </p>
+            <img src="https://i0.wp.com/coveringmiles.com/wp-content/uploads/Rann-of-Kutch/white-rann.jpg?fit=960%2C755&ssl=1" class="bamboo">
+        </div>
+
+     
+        <div class="card">
+            <h2 style="color: #0d2c53;font-family: Lucida calligraphy;">VALUES</h2>
+            <p>
+                We are guided by sustainability, respect for nature, and a deep commitment to the people and culture of Kutch. We promote ethical and responsible tourism that protects the environment,
+                 empowers local communities, and preserves traditional heritage.
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ81A8ww7XFJMGdtft9yrsXDGFpoMI3lHGGJCRXHB4qoGG-R3rqGs62q4nQFP9Ih_85eMU&usqp=CAU" class="bamboo">
+        </div>
+    </div>
+</section>
+
+</body>
+<footer style="background-color:#0d2c53bd ; height: 200px; color: #ff9397; font-size: 18px;   display: flex;
+    justify-content: space-between;">
+
+<div class="itenary" style="float: left; padding:10px 0px 0px 30px ;">Travel Itenary<br><br>
+  <a href="file:///C:/Users/Smit%20Gangani/OneDrive/Desktop/WEBSITE/itenary.html"><button style="background-color: #ff9397; color: #0d2c53bd;">Click to know more</button></a>
+</div>
+
+    <div class="address" style="float: left; text-align: center;  padding: 10px 0px 0px 20%;"><pre>
+<ul>Credits:
+<li>Smit Gangani</li>
+<li>Shubhada Gondhali</li>
+<li>Parita Gosar</li>
+</ul>
+
+</pre>
+</div>
+
+<div class="phone" style="float:right; text-align: center; padding: 10px 30% 0px 0px; ">
+    <pre>
+Gmail:
+
+smit.gangani25@sakec.ac.in
+shubhada.gondhali25@sakec.ac.in
+parita.gosar25@sakec.ac.in
+</pre>
+</div>
+</footer>
+</html>
